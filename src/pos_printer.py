@@ -15,7 +15,7 @@ class USB_Printer:
 	
 	def open(self):
 		
-		#find Epson TM-T20III
+		#get Epson TM-T20III
 		self.device = usb.core.find(idVendor=0x04b8, idProduct=0x0e15)
 		if self.device is None:
 			print("Device not found or cable not plugged in.")
